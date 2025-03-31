@@ -13,6 +13,7 @@
 html,
 body {
   overflow: hidden; /* Prevent any scrolling */
+  position: relative;
   height: 100%;
 }
 a {
@@ -29,25 +30,28 @@ a {
   background-color: #000;
   border-radius: 50px;
   position: fixed;
-  bottom: 90px;
-  right: 10%;
+  bottom: 5px;
+  right: 41%;
   z-index: 1;
 }
 
 #envelope {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   background-color: var(--Light-Purple);
   height: 100dvh;
 }
 .fa-regular {
   margin-right: 10px;
   margin-left: 10px;
+  z-index: 1;
 }
 .fa-house {
   margin-right: 13px;
   margin-left: 10px;
+  margin-bottom: 10px;
+  z-index: 1;
 }
 
 .invitation {
@@ -249,6 +253,11 @@ button {
   .cat {
     bottom: 15px;
     right: 1.3%;
+  }
+  #envelope {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .left {
     left: calc(min(1vw, 95%));
